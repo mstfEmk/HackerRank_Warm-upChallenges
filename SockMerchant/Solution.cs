@@ -1,9 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.IO;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace SockMerchant
 {
@@ -27,9 +24,6 @@ namespace SockMerchant
                 {
                     sockCount.Add(i, 1);
                 }
-
-
-                Console.WriteLine("i:{0} Count:{1}", i, sockCount[i]);
             }
 
             foreach(int i in sockCount.Keys)
@@ -45,7 +39,7 @@ namespace SockMerchant
 
         static void Main(string[] args)
         {
-            TextWriter textWriter = new StreamWriter("./../../input.txt");
+            TextWriter textWriter = new StreamWriter("./../../output.txt");
 
             int n = Convert.ToInt32(Console.ReadLine());
 
